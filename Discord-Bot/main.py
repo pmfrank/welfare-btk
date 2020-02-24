@@ -34,11 +34,6 @@ class Welfare(commands.AutoShardedBot):
             await bot.start(TOKEN, **kwargs)
         except KeyboardInterrupt:
             await bot.close()
-    
-    # @commands.command()
-    # async def alli(self, member:discord.Member):
-    #     jailrole=get(guild.roles, name="welfare")
-    #     await member.add_roles(jailrole)
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
