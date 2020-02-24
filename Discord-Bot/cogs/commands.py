@@ -8,14 +8,14 @@ class Commands(commands.Cog):
     @commands.command(name='alliance', aliases=['alli'])
     async def alliance(self, ctx):
         
-        role = discord.utils.get(ctx.author.roles, name='bullets')
+        role = discord.utils.get(ctx.author.roles, name='Bullets')
         if role:
-            new_role = discord.utils.get(ctx.guild.roles, name='welfare')
+            new_role = discord.utils.get(ctx.guild.roles, name='Welfare')
             await ctx.author.remove_roles(role)
             await ctx.author.add_roles(new_role)
         else:
-            role = discord.utils.get(ctx.author.roles, name='welfare')
-            new_role = discord.utils.get(ctx.guild.roles, name='bullets')
+            role = discord.utils.get(ctx.author.roles, name='Welfare')
+            new_role = discord.utils.get(ctx.guild.roles, name='Bullets')
             await ctx.author.remove_roles(role)
             await ctx.author.add_roles(new_role)
         # await ctx.author.add_roles(role)
