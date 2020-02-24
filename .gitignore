@@ -1,0 +1,6 @@
+Discord-Bot/config.py
+venv/
+.vscode/
+
+Discord-Bot/__pycache__/
+Discord-Bot/cogs/__pycache__/
