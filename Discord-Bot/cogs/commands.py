@@ -7,8 +7,6 @@ class Commands(commands.Cog):
 
     @commands.command(name='alliance', aliases=['alli'])
     async def alliance(self, ctx):
-        print(dir(ctx.guild))
-        print(ctx.guild.roles)
         
         role = discord.utils.get(ctx.author.roles, name='bullets')
         if role:
