@@ -17,5 +17,13 @@ class Commands(commands.Cog):
         await ctx.author.remove_roles(role)
         await ctx.author.add_roles(new_role)
 
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        if message.author.bot:
+            pass
+        else:
+            await message.channel.send(f'Hi, {message.author.mention}')
+            print(dir(message.author))
+
 def setup(bot):
     bot.add_cog(Commands(bot))
