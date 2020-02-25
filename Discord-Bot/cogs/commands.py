@@ -18,7 +18,6 @@ class Commands(commands.Cog):
             new_role = discord.utils.get(ctx.guild.roles, name='Bullets')
             await ctx.author.remove_roles(role)
             await ctx.author.add_roles(new_role)
-        # await ctx.author.add_roles(role)
 
 def setup(bot):
     bot.add_cog(Commands(bot))
