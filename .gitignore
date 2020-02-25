@@ -1,6 +1,11 @@
+# Remove config files, virtual environment, and VSCode settings
 Discord-Bot/config.py
+Adventure-Bot/config.py
 venv/
 .vscode/
 
+# Remove pycache directories
 Discord-Bot/__pycache__/
 Discord-Bot/cogs/__pycache__/
+Adventure-Bot/__pycache__/
+Adventure-Bot/cogs/__pycache__/
